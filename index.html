@@ -1,66 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Learing HTML & CSS</title>
-</head>
-<body>
-    <!-- `<h1>` to `<h6>` tags are used to define HTML headings. -->
-    <h1>
-        JavaScript is fun, but so is HTML & CSS!
-    </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals – Part 1</h1>
 
-    <!--
-        `class` attribute identifies an element in HTML document.
-        name of class can be called multiple times and with multiple names (whereas `id` must be unique)
-        `<p>` element represents a paragraph.
-     -->
-        <p class="first">
-            You can learn JavaScript without HTML & CSS, but for DOM manipulation it's useful to have some basic ideas of HTML & CSS.
-        </p>
-
-        <!--
-            HTML <a> element (or anchor element), with its href attribute,
-            creates a hyperlink to web pages, files, email addresses,
-            locations in the same page or anything else a URL can address.
-            `href` will create a blue, underlined hyperlink.
-         -->
-        <a href="https://www.w3schools.com/js/DEFAULT.asp">
-            JavaScript Tutorial
-        </a>
-    <h2>
-        Another heading
-    </h2>
-        <p class="second">
-            Just another paragraph
-        </p>
-
-        <!--
-            Image object represents an HTML `<img>` elements
-            `src` attribute specifies the URL of an image
-            `<img />`-- has single closing tag.
-         -->
-        <img
-        id="course-image"
-        src="https://www.w3schools.com/images/w3certified_logo_250.png"
-        />
-
-        <!-- `id` attribute should be unique within a page -->
-        <form id="your-name">
-            <h2>Your name here</h2>
-            <p>Please fill the form :)</p>
-
-            <!--
-                `type` can be string/variable
-                `placeholder` attribute specifies a short hint that describes the expected value of a text field
-                `<input />` -- input also has single closing tag like `<img/>`
-                text enclosed between button's opening and closing tags are the label that will display on the button.
-             -->
-            <input type="text" placeholder="Your Name"/>
-            <button>OK!</button>
-        </form>
-</body>
+    <script src="values_variables.js"></script>
+  </body>
 </html>
